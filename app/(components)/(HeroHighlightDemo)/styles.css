@@ -1,0 +1,5 @@
+.highlighted-text {
+    display: inline; /* Ensures the text is treated as inline */
+    white-space: nowrap; /* Prevents the text from breaking into new lines */
+  }
+  

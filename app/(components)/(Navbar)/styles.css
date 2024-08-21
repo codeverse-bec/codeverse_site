@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.topnav {
+    background-color: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(40px); 
+    
+    -webkit-backdrop-filter: blur(10px);    
+    box-shadow: 0 5px 25px rgba(129, 124, 124, 0.2);
+    
+    display: flex;
+    overflow: hidden;
+    border-radius: 8px;
+    user-select: none;
+
+    /* Centering the navbar */
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30; /* Ensures the navbar stays on top */
+
+    /* Glass morph effect */
+    /* backdrop-filter: blur(30px); 
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255,255,255,0.18); */
+}
+
+/* Style the links inside the navigation bar */
+.topnav .linkele {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 20px; /* Adjusted padding for more spacing */
+    text-decoration: none;
+    font-size: 17px;
+    position: relative; /* Required for the absolute positioning of the underline */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Change the color of links on hover */
+.topnav .linkele:hover {
+    color: rgb(218, 218, 218);
+}
+
+/* Add underline on hover */
+.topnav .linkele::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #4e95dc;
+    transition: width 0s ease;
+}
+
+.topnav .linkele:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in;
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 600px) {
+    .topnav .linkele {
+        padding: 10px 12px; /* Reduced padding for smaller screens */
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
+    
+    /* Hide the text and show only the icons on very small screens */
+    .topnav .linkele span {
+        display: none;
+    }
+
+    i {
+        display: block;
+    }
+}
+
+/* Ensures all icons and text fit in a single line even at 375px */
+@media screen and (max-width: 375px) {
+    .topnav .linkele {
+        padding: 8px 10px; /* Further reduce padding on very small screens */
+        font-size: 12px; /* Reduce font size to ensure everything fits */
+    }
+}
