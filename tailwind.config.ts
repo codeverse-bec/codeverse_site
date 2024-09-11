@@ -31,6 +31,11 @@ const config: Config = {
   // darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        'xs': {'max': '516px'},
+        // 'm':{'min': '840px'}
+         // Custom breakpoint for screens less than 400px
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -14,7 +14,7 @@ const navLinks = [
     {name: "resources", href:"/resources",icon:<LibraryBooksOutlinedIcon/>},
     {name: "events", href:"/events",icon:<EmojiEventsOutlinedIcon/>},
     {name: "leaderboard", href:"/leaderboard",icon:<LeaderboardIcon/>},
-    {name: "contact-us", href:"/contact-us",icon:<Groups2OutlinedIcon/>},
+    {name: "contact us", href:"/contact-us",icon:<Groups2OutlinedIcon/>},
 
 ];
 
@@ -45,7 +45,7 @@ export default function Navbar(){
     const pathName = usePathname();
 
     return (
-        <div className="flex topnav fixed top-10 z-10 4">
+        <div className="flex topnav fixed top-10 z-10 " >
             {navLinks.map((link)=>{
                 let isActive = pathName.startsWith(link.href) && !link.href.endsWith('/');
                 isActive = link.href==pathName;

@@ -5,31 +5,25 @@
 .topnav {
     background-color: rgba(255, 255, 255, 0.1); 
     backdrop-filter: blur(40px); 
-    
     -webkit-backdrop-filter: blur(10px);    
     box-shadow: 0 5px 25px rgba(129, 124, 124, 0.2);
     
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: 8px;
     user-select: none;
 
     /* Centering the navbar */
     position: fixed;
-    top: 10px;
+    top: 10px !important;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 30; /* Ensures the navbar stays on top */
-
-    /* Glass morph effect */
-    /* backdrop-filter: blur(30px); 
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(255,255,255,0.18); */
+    z-index: 30 !important; /* Ensures the navbar stays on top */
 }
 
-/* Style the links inside the navigation bar */
 .topnav .linkele {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 12px 20px; /* Adjusted padding for more spacing */
@@ -63,6 +57,10 @@
 
 /* Responsive design adjustments */
 @media screen and (max-width: 600px) {
+    .topnav {
+        justify-content: center;
+    }
+    
     .topnav .linkele {
         padding: 10px 12px; /* Reduced padding for smaller screens */
         font-size: 14px; /* Adjusted font size for smaller screens */
@@ -80,6 +78,10 @@
 
 /* Ensures all icons and text fit in a single line even at 375px */
 @media screen and (max-width: 375px) {
+    .topnav {
+        justify-content: center;
+    }
+
     .topnav .linkele {
         padding: 8px 10px; /* Further reduce padding on very small screens */
         font-size: 12px; /* Reduce font size to ensure everything fits */

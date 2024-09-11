@@ -1,7 +1,9 @@
-export default function ContactUs(){
-    return (
-        <div style={{marginTop: '70px'}}>
-            <h1>Contact us page</h1>
-        </div>
-    );
+import Contact from "@/app/(components)/(contact)/page";
+
+export default function ContactUs() {
+  return (
+    <div style={{ position: "relative", minHeight: "100vh" }}>
+      <Contact />
+    </div>
+  );
 }

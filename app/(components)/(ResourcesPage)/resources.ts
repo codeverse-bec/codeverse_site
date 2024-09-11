@@ -26,6 +26,27 @@ export const resources = [
             image: "/assets/images/striverDSAPlaylist.jpg",
             link: "https://google.com",
           },
+          {
+            title: "Google",
+            description:
+              "A multinational technology company that specializes in Internet-related services and products.",
+            image: "/assets/images/striverDSAPlaylist.jpg",
+            link: "https://flipkart.com",
+          },
+          {
+            title: "Google",
+            description:
+              "A multinational technology company that specializes in Internet-related services and products.",
+            image: "/assets/images/striverDSAPlaylist.jpg",
+            link: "https://facebook.com",
+          },
+          {
+            title: "Google",
+            description:
+              "A multinational technology company that specializes in Internet-related services and products.",
+            image: "/assets/images/striverDSAPlaylist.jpg",
+            link: "https://uber.com",
+          },
       ],
     },
     {

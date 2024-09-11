@@ -1,6 +1,6 @@
 
-// import Hero from "./(components)/(Hero)/page";
-import About from "./(components)/About/page";
+import Hero from "./(components)/(Hero)/page";
+import About from "./(components)/(About)/page";
 import SparklesPreview from "./(components)/(Hero)/page";
 
 

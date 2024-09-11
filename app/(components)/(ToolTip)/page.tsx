@@ -5,14 +5,14 @@ const people = [
   {
     id: 1,
     name: "Imran khan",
-    designation: "Frontend",
+    designation: " ",
     image:
       "/assets/images/imran.png",
   },
   {
     id: 2,
     name: "Dhana sekhar",
-    designation: "Backend",
+    designation: " ",
     image:
       "/assets/images/dhana.png",
   },

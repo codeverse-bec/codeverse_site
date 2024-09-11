@@ -1,6 +1,7 @@
 import Footer from "./(components)/(Footer)/page";
 import Navbar from "./(components)/(Navbar)/page";
 
+
 export const metadata = {
   title: 'CODEVERSE',
   description: 'multiverse of coders',
@@ -12,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body style={{backgroundColor:'black', color:'white'}}>
         <div style={{textAlign:"center"}}>
           <Navbar/>  

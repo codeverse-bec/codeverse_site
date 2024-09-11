@@ -18,10 +18,10 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="text-xl px-4 md:text-2xl lg:text-3xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+        className="text-2xl px-4 md:text-3xl lg:text-4xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
       >
-        In the silence of debugging, every error is a whisper. Reality distorts, {" "}<br/>
-        <Highlight className="text-black dark:text-white text-lg md:text-xl lg:text-2xl highlighted-text">
+        In the silence of debugging, every error is a whisper. Reality distorts, <br className="hidden sm:block" />
+        <Highlight className="text-black dark:text-white text-base sm:text-lg md:text-xl lg:text-2xl highlighted-text">
           code remains.
         </Highlight>
       </motion.h1>

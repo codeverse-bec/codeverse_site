@@ -21,7 +21,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-10",
+        "grid grid-cols-2 xs:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-10",
         className
       )}
     >
@@ -47,7 +47,7 @@ export const HoverEffect = ({
 
           <div
             className={cn(
-              "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20"
+              "rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 "
             )}
           >
             <img
